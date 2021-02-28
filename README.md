@@ -1,7 +1,7 @@
 # Run
 
 $ git clone https://github.com/Pazinyak18/python_labs.git
-$ cd pyLabs
+$ cd python_labs
 $ git checkout lab1
 $ python3 main.py
 # info
