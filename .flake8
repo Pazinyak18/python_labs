@@ -1,5 +1,5 @@
 [flake8]
-ignore = F541
+ignore = F541 ,E226
 max-line-length = 120
-exclude = tests/*, venv/*
+exclude = tests/*, env/*
 max-complexity = 10
