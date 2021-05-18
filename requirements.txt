@@ -1,0 +1,8 @@
+flask
+flask_sqlalchemy
+flask_marshmallow
+marshmallow-sqlalchemy
+mysql-connector
+mysql-connector-python
+marshmallow_enum
+marshmallow
