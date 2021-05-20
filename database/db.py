@@ -44,7 +44,7 @@ class Album(db.Model):
 
 
 class AlbumSchema(ma.Schema):
-    # зефірка валідація
+   
     name = fields.Str(validate=validate.Length(min=1, max=32))
     band = fields.Str(validate=validate.Length(min=1, max=32))
     type_of_genre = EnumField(Genre)
@@ -52,7 +52,7 @@ class AlbumSchema(ma.Schema):
     duration_in_sec = fields.Int(validate=validate.Range(min=1, max=99999999))
     price = fields.Float(validate=validate.Range(min=0.0, max=9999.999))
 
-    # піздец важлива хрень десиріалізація з зефірки в пітон
+ 
     @post_load
     def make_album(self, data, **kwargs):
         return Album(**data)
